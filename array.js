@@ -46,3 +46,5 @@ let filtereddata = list.filter(element => element.sale > 500);
 
 var index = list.findIndex(item => item.sale == 600)
 console.log(index);
+
+console.log('hello')
