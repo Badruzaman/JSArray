@@ -60,6 +60,5 @@ foods.push(chiaseeds);
 foods.forEach(element => {
     console.log(element.food)
 });
-console.log('git commit')
-console.log('new pull')
-console.log('new project')
+
+
