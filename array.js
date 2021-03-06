@@ -84,3 +84,8 @@ function isPrime(num) {
   const array1 = [5, 12, 8, 130, 44];
   const isLargeNumber = (item) => item > 13;
   //console.log(array1.findIndex(isLargeNumber));
+
+const fruits = ["apple", "banana", "cantaloupe", "blueberries", "grapefruit"];
+const index = fruits.findIndex(fruit => fruit === "blueberries");
+console.log(index); // 3
+console.log(fruits[index]); // blueberries
