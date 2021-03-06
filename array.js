@@ -77,8 +77,9 @@ function isPrime(num) {
     }
     return num > 1;
   }
-  
   console.log([4, 6, 8, 9, 12].findIndex(isPrime)); // -1, not found
   console.log([4, 6, 7, 9, 12].findIndex(isPrime)); // 2 (array[2] is 7)
 
-
+  const array1 = [5, 12, 8, 130, 44];
+  const isLargeNumber = (item) => item > 13;
+  console.log(array1.findIndex(isLargeNumber));
