@@ -66,6 +66,8 @@ console.log('find takes first match only :', findobj);
 const filterobj = foods.filter(it =>it.type = 'fruits'); // take all matches
 console.log('Filter takes all possible matches : ', filterobj);
 
+const findindex = foods.findIndex(it => it.type === 'grain');
+console.log(findindex);
 
 
 
