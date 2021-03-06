@@ -58,7 +58,11 @@ foods.push(chiaseeds);
 //console.log(foods)
 
 foods.forEach(element => {
-    console.log(element.food)
+    //console.log(element.food)
 });
+
+const findobj = "";
+
+
 
 
