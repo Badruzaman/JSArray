@@ -62,13 +62,23 @@ foods.forEach(element => {
 });
 
 const findobj = foods.find(it =>it.type = 'fruits'); // take first match only
-console.log('find takes first match only :', findobj);
+//console.log('find takes first match only :', findobj);
 const filterobj = foods.filter(it =>it.type = 'fruits'); // take all matches
-console.log('Filter takes all possible matches : ', filterobj);
+//console.log('Filter takes all possible matches : ', filterobj);
 
-const findindex = foods.findIndex(it => it.type === 'grain');
-console.log(findindex);
+//const findindex = foods.findIndex(it => it.type === 'grain');
+//console.log(findindex);
 
-
+function isPrime(num) {
+    for (let i = 2; num > i; i++) {
+      if (num % i == 0) {
+        return false;
+      }
+    }
+    return num > 1;
+  }
+  
+  console.log([4, 6, 8, 9, 12].findIndex(isPrime)); // -1, not found
+  console.log([4, 6, 7, 9, 12].findIndex(isPrime)); // 2 (array[2] is 7)
 
 
