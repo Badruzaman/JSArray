@@ -51,17 +51,21 @@ const foods = [
 
 const blackbeans = {food: 'black beans', type: 'legume'};
 const chiaseeds = {food: 'chia seeds', type: 'seed'};
-const removedItem =  foods.pop();
-const firstItem  = foods.shift();
-foods.unshift(blackbeans)
-foods.push(chiaseeds);
-//console.log(foods)
+//const removedItem =  foods.pop();
+//const firstItem  = foods.shift();
+//foods.unshift(blackbeans)
+//foods.push(chiaseeds);
+console.log(foods)
 
 foods.forEach(element => {
     //console.log(element.food)
 });
 
-const findobj = "";
+const findobj = foods.find(it =>it.type = 'fruits'); // take first match only
+console.log('find takes first match only :', findobj);
+const filterobj = foods.filter(it =>it.type = 'fruits'); // take all matches
+console.log('Filter takes all possible matches : ', filterobj);
+
 
 
 
