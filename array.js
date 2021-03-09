@@ -87,5 +87,31 @@ function isPrime(num) {
 
 const fruits = ["apple", "banana", "cantaloupe", "blueberries", "grapefruit"];
 const index = fruits.findIndex(fruit => fruit === "blueberries");
-console.log(index); // 3
-console.log(fruits[index]); // blueberries
+//console.log(index); // 3
+//console.log(fruits[index]); // blueberries
+
+class Hero {
+  constructor(heroName)
+  {
+    this.HeroName = heroName;
+  }
+  logName() {
+    //console.log(this.HeroName);
+  }
+}
+var result  = new Hero('Badruzzaman');
+console.log(result.HeroName)
+// setTimeout(result.logName.bind(result), 1000);
+
+class Hero {
+  constructor(heroName) {
+    this.heroName = heroName;
+  }
+
+  logName = () => {
+    console.log(this.heroName);
+  }
+}
+
+const batman = new Hero('Batman');
+console.log(batman.heroName);
