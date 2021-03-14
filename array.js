@@ -87,6 +87,7 @@ function isPrime(num) {
 
 const fruits = ["apple", "banana", "cantaloupe", "blueberries", "grapefruit"];
 const index = fruits.findIndex(fruit => fruit === "blueberries");
+<<<<<<< HEAD
 //console.log(index); // 3
 //console.log(fruits[index]); // blueberries
 
@@ -115,3 +116,9 @@ class Hero {
 
 const batman = new Hero('Batman');
 console.log(batman.heroName);
+=======
+console.log(index); // 3
+console.log(fruits[index]); // blueberries
+
+console.log('new commit')
+>>>>>>> cc1da9af263af3a271dcf7df61a883df5c8c8c29
